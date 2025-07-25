@@ -122,12 +122,12 @@ int main() {
    } else {printf("Resultado: Carta 2 População (%s) venceu!\n", nome_2);}
    //Abaixo comparação de cartas PIB
    printf("Comparação de cartas (Atributo: PIB):\n");
-   printf("Carta 1 PIB - %s: %d\n", nome_1, PIB_1);
-   printf("Carta 2 PIB - %s: %d\n", nome_2, PIB_2);
+   printf("Carta 1 PIB - %s:  %.2f\n", nome_1, PIB_1);
+   printf("Carta 2 PIB - %s:  %.2f\n", nome_2, PIB_2);
    //teste logico PIB
    if(PIB_1 > PIB_1){
-    printf("Resultado: Carta 1 PIB (%s) venceu!\n", nome_1);
-   } else {printf("Resultado: Carta 2 PIB (%s) venceu!\n", nome_2);}
+    printf("Resultado: Carta 1 PIB ( %s) venceu!\n", nome_1);
+   } else {printf("Resultado: Carta 2 PIB ( %s) venceu!\n", nome_2);}
 
     return 0;
 }
