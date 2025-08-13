@@ -99,6 +99,7 @@ int main() {
     {
     case 1:
         //Abaixo comparação de cartas POPULAÇÃO
+    printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: População):\n");
    printf("Carta 1 População - %s: %d\n", nome_1, populacao_1);
    printf("Carta 2 População - %s: %d\n", nome_2, populacao_2);
@@ -109,10 +110,12 @@ int main() {
    
         break;
     case 2:
+    printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
     printf("2 - Área\n");
     break;
     case 3:
          //Abaixo comparação de cartas PIB
+    printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: PIB):\n");
    printf("Carta 1 PIB - %s:  %.2f\n", nome_1, PIB_1);
    printf("Carta 2 PIB - %s:  %.2f\n", nome_2, PIB_2);
@@ -128,6 +131,7 @@ int main() {
     }
        
    //Abaixo comparação de cartas PIB
+   printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: PIB):\n");
    printf("Carta 1 PIB - %s:  %.2f\n", nome_1, PIB_1);
    printf("Carta 2 PIB - %s:  %.2f\n", nome_2, PIB_2);
