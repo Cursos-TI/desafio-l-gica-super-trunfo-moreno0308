@@ -18,6 +18,15 @@ int main() {
 
     
     // Cadastro das Cartas:
+    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
+    // utilizando a função scanf para capturar as entradas.
+    // utilize o código do primeiro desafio
+
+    // Exemplo:
+    // printf("Digite o código da cidade: ");
+    // scanf("%s", codigo);
+    // 
+    // (Repita para cada propriedade)
         //abaixo dados da primaira carta
     printf("Jogador 1 digite os dados da Primeira carta.\n");
     printf("Jogador 1 Digite o nome da cidade da primeira carta - Apenas Letras:\n");
@@ -50,6 +59,8 @@ int main() {
     float  Densidade_Populacional2 = (float) populacao_2 / area_2; //calculo media desnsidade populacional
     float PIB_per_Capita_2 = (float) (PIB_2 * 1000000000) / populacao_2; // calculo PIB per capita multipliquei pois o usuario esta para inserir dados abreviado
     // Exibição dos Dados das Cartas:
+    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
+    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     //abaixo valores da primeira caixa jogador 1
     printf("abaixo sera exibida os dados da Primeira carta Jogador 1:\n");
     printf("\n");
@@ -85,7 +96,22 @@ int main() {
 
 
     // Comparação de Cartas:
+    // Desenvolva a lógica de comparação entre duas cartas.
+    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
 
+    // Exemplo:
+    // if (populacaoA > populacaoB) {
+    //     printf("Cidade 1 tem maior população.\n");
+    // } else {
+    //     printf("Cidade 2 tem maior população.\n");
+    // }
+
+    // Exibição dos Resultados:
+    // Após realizar as comparações, exiba os resultados para o usuário.
+    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
+
+    // Exemplo:
+    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
        //Abaixo comparação de cartas POPULAÇÃO
    printf("Comparação de cartas (Atributo: População):\n");
    printf("Carta 1 População - %s: %d\n", nome_1, populacao_1);
