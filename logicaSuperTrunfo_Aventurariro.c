@@ -9,7 +9,7 @@ int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
     //Estou declarando as variaveis como mencionados na aulas 
-    int codigo_da_cidade_1 = 1, codigo_da_cidade_2 = 2; //essas variaveis não serão informadas pelo usuario serão fixas
+    int codigo_da_cidade_1 = 1, codigo_da_cidade_2 = 2, opcao = 2; //essas variaveis não serão informadas pelo usuario serão fixas
     int populacao_1 = 1000, populacao_2 = 1000, pontos_turisticos_1 = 2, pontos_turisticos_2 = 2;//cadastro das vareaveis de população e ponto turisticos 
     float area_1, area_2 = 000.00, PIB_1, PIB_2 = 00.00;// cadastro dos pontos flutuantes area e PIB
     char  nome_1[25] = "Cidade 1", nome_2[25] = "Cidade 2"; //nomes das cidades
@@ -85,15 +85,48 @@ int main() {
 
 
     // Comparação de Cartas:
+    //menu comparação
+    printf("Escolha um Atributo Para comparação:\n");
+    printf("1 - População\n");
+    printf("2 - Área\n");
+    printf("4 - PIB\n");
+    printf("5 - Número de pontos turísticos\n");
+    printf("6 - Densidade demográfica\n");
+    printf("Digite a opção\n");
+    scanf("%d", &opcao);
 
-       //Abaixo comparação de cartas POPULAÇÃO
+    switch (opcao)
+    {
+    case 1:
+        //Abaixo comparação de cartas POPULAÇÃO
    printf("Comparação de cartas (Atributo: População):\n");
    printf("Carta 1 População - %s: %d\n", nome_1, populacao_1);
    printf("Carta 2 População - %s: %d\n", nome_2, populacao_2);
    //teste logico popupação
    if(populacao_1 > populacao_2){
     printf("Resultado: Carta 1 População (%s) venceu!\n", nome_1);
-   } else {printf("Resultado: Carta 2 População (%s) venceu!\n", nome_2);}
+   } else if(populacao_1 < populacao_2) {printf("Resultado: Carta 2 População (%s) venceu!\n", nome_2);} else {printf("Jogadores Empatarão no Atributo população. \n");}
+   
+        break;
+    case 2:
+    printf("2 - Área\n");
+    break;
+    case 3:
+         //Abaixo comparação de cartas PIB
+   printf("Comparação de cartas (Atributo: PIB):\n");
+   printf("Carta 1 PIB - %s:  %.2f\n", nome_1, PIB_1);
+   printf("Carta 2 PIB - %s:  %.2f\n", nome_2, PIB_2);
+   //teste logico PIB
+   if(PIB_1 > PIB_1){
+    printf("Resultado: Carta 1 PIB ( %s) venceu!\n", nome_1);
+   } else if(PIB_1 < PIB_1) {printf("Resultado: Carta 2 PIB ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo PIB");}
+
+
+    break;
+    default:
+        break;
+    }
+       
    //Abaixo comparação de cartas PIB
    printf("Comparação de cartas (Atributo: PIB):\n");
    printf("Carta 1 PIB - %s:  %.2f\n", nome_1, PIB_1);
