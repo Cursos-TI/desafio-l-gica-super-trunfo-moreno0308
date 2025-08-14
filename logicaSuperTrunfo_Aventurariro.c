@@ -142,7 +142,19 @@ int main() {
     printf("Resultado: Carta 1 Número de pontos turísticos ( %s) venceu!\n", nome_1);
    } else if(pontos_turisticos_1 < pontos_turisticos_2) {printf("Resultado: Carta 2 Número de pontos turísticos ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo Número de pontos turísticos");}
     break;
+    case 5:
+         //Abaixo comparação de cartasDensidade demográfica
+    printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
+   printf("Comparação de cartas (Atributo: Densidade demográfica):\n");
+   printf("Carta 1 Densidade demográfica - %s:  %.2f\n", nome_1, Densidade_Populacional_1);
+   printf("Carta 2 Densidade demográfica - %s:  %.2f\n", nome_2, Densidade_Populacional2);
+   //teste logico Densidade demográfica
+   if(Densidade_Populacional_1 < Densidade_Populacional2){
+    printf("Resultado: Carta 1 Densidade demográfica ( %s) venceu!\n", nome_1);
+   } else if(Densidade_Populacional_1 > Densidade_Populacional2) {printf("Resultado: Carta 2 Densidade demográfica ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo Densidade demográfica");}
+    break;
     default:
+    printf("***********Opção Invalida!!!! ***********\n");
         break;
     }
     return 0;
