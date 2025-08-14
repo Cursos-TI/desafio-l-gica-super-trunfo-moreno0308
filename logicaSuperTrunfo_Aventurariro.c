@@ -110,8 +110,15 @@ int main() {
    
         break;
     case 2:
+//Abaixo comparação de cartas AREA
     printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
-    printf("2 - Área\n");
+   printf("Comparação de cartas (Atributo: Área):\n");
+   printf("Carta 1 Área - %s: %d\n", nome_1, area_1);
+   printf("Carta 2 Área - %s: %d\n", nome_2, area_2);
+   //teste logico popupação
+   if(area_1 > area_2){
+    printf("Resultado: Carta 1 Área (%s) venceu!\n", nome_1);
+   } else if(area_1 < area_2) {printf("Resultado: Carta 2 Área (%s) venceu!\n", nome_2);} else {printf("Jogadores Empatarão no Atributo população. \n");}
     break;
     case 3:
          //Abaixo comparação de cartas PIB
@@ -123,8 +130,6 @@ int main() {
    if(PIB_1 > PIB_1){
     printf("Resultado: Carta 1 PIB ( %s) venceu!\n", nome_1);
    } else if(PIB_1 < PIB_1) {printf("Resultado: Carta 2 PIB ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo PIB");}
-
-
     break;
     default:
         break;
