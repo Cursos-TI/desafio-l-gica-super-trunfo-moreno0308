@@ -113,8 +113,8 @@ int main() {
 //Abaixo comparação de cartas AREA
     printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: Área):\n");
-   printf("Carta 1 Área - %s: %d\n", nome_1, area_1);
-   printf("Carta 2 Área - %s: %d\n", nome_2, area_2);
+   printf("Carta 1 Área - %s: %.2f Km²\n", nome_1, area_1);
+   printf("Carta 2 Área - %s: %.2f Km²\n", nome_2, area_2);
    //teste logico popupação
    if(area_1 > area_2){
     printf("Resultado: Carta 1 Área (%s) venceu!\n", nome_1);
@@ -124,8 +124,8 @@ int main() {
          //Abaixo comparação de cartas PIB
     printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: PIB):\n");
-   printf("Carta 1 PIB - %s:  %.2f\n", nome_1, PIB_1);
-   printf("Carta 2 PIB - %s:  %.2f\n", nome_2, PIB_2);
+   printf("Carta 1 PIB - %s: %.2f Bilhões de Reais\n", nome_1, PIB_1);
+   printf("Carta 2 PIB - %s:  %.2f Bilhões de Reais\n", nome_2, PIB_2);
    //teste logico PIB
    if(PIB_1 > PIB_2){
     printf("Resultado: Carta 1 PIB ( %s) venceu!\n", nome_1);
@@ -135,8 +135,8 @@ int main() {
          //Abaixo comparação de cartas Número de pontos turísticos
     printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: Número de pontos turísticos):\n");
-   printf("Carta 1 Número de pontos turísticos - %s:  %.2f\n", nome_1, pontos_turisticos_1);
-   printf("Carta 2 Número de pontos turísticos - %s:  %.2f\n", nome_2, pontos_turisticos_2);
+   printf("Carta 1 Número de pontos turísticos - %s: %d \n", nome_1, pontos_turisticos_1);
+   printf("Carta 2 Número de pontos turísticos - %s: %d \n", nome_2, pontos_turisticos_2);
    //teste logico Número de pontos turísticos
    if(pontos_turisticos_1 > pontos_turisticos_2){
     printf("Resultado: Carta 1 Número de pontos turísticos ( %s) venceu!\n", nome_1);
