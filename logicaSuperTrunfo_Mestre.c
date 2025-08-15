@@ -173,6 +173,7 @@ int main() {
     //menu comparação Segundo atributo
     printf("\n");
     printf("Escolha o Segundo Atributo Para comparação:\n");
+    //testes logicos para apresentar os atributos que ainda não foram escolhidos
     if(Atributo_1 == 1){printf("\n");} else{printf("1 - População\n");}
     if(Atributo_1 == 2){printf("\n");} else {("2 - Área\n");}
     if(Atributo_1 == 3){printf("\n");} else {printf("3 - PIB\n");}
@@ -181,6 +182,7 @@ int main() {
     printf("Digite a opção\n");
     scanf("%d", &Atributo_2);
 
+//teste para verificar se o atributo escolhido é o mesmo ja escolhido  
 if (Atributo_1 == Atributo_2)
 {
     printf("Você escolheu o mesmo atributo, escolha atributos diferentes! \n");
@@ -256,7 +258,10 @@ if (Atributo_1 == Atributo_2)
     printf("***********Opção Invalida!!!! ***********\n");
         break;
     }}
+    //Pular Linha
     printf("\n");
+
+    //Logica para imprimir o ganhador do jogo 
     if (resultado_1 && resultado_2)
     {
        printf("O Ganhador Foi o Jogador 1 Com a carta: %s \n",nome_1);
