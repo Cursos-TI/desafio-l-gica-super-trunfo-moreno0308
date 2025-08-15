@@ -15,7 +15,8 @@ int main() {
     char  nome_1[25] = "Cidade 1", nome_2[25] = "Cidade 2"; //nomes das cidades
     char estado_1 = 'A', estado_2 = 'B';
     float SuperPoder_A = 15.00, SuperPoder_B = 15.00;
-    char resultado_1, resultado_2;
+    char *resultado_1 = "Cidade 1"; 
+    char *resultado_2 = "Cidade 2";
 
     
     // Cadastro das Cartas:
@@ -169,6 +170,7 @@ int main() {
     }
 //**********************************
     //menu comparação Segundo atributo
+    printf("\n");
     printf("Escolha o Segundo Atributo Para comparação:\n");
     printf("1 - População\n");
     printf("2 - Área\n");
@@ -253,6 +255,13 @@ if (Atributo_1 == Atributo_2)
     printf("***********Opção Invalida!!!! ***********\n");
         break;
     }}
-
+    printf("\n");
+    if ((resultado_1 == nome_1) && (resultado_2 == nome_1))
+    {
+       printf("O Ganhador Foi o Jogador 1, Com a carta: %s \n",nome_1);
+    } else if((resultado_1 == nome_2) && (resultado_2 == nome_2)) 
+    {printf("O Ganhador Foi o Jogador 2, Com a carta: %s \n",nome_2);}
+    else{printf("****Jogo empatou****");}   
+    
     return 0;
 }
