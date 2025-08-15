@@ -104,8 +104,8 @@ int main() {
     printf("Abaixo dados do primeiro atributo escolnhido: \n");
     printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: População):\n");
-   printf("Carta 1 População - %s: %d\n", nome_1, populacao_1);
-   printf("Carta 2 População - %s: %d\n", nome_2, populacao_2);
+   printf("Carta 1 População - %s: %d Pessoas\n", nome_1, populacao_1);
+   printf("Carta 2 População - %s: %d Pessoas\n", nome_2, populacao_2);
    //teste logico popupação
    if(populacao_1 > populacao_2){
     printf("Resultado: Carta 1 População (%s) venceu!\n", nome_1);
@@ -172,11 +172,11 @@ int main() {
     //menu comparação Segundo atributo
     printf("\n");
     printf("Escolha o Segundo Atributo Para comparação:\n");
-    printf("1 - População\n");
-    printf("2 - Área\n");
-    printf("3 - PIB\n");
-    printf("4 - Número de pontos turísticos\n");
-    printf("5 - Densidade demográfica\n");
+    if(Atributo_1 == 1){printf("\n");} else{printf("1 - População\n");}
+    if(Atributo_1 == 2){printf("\n");} else {("2 - Área\n");}
+    if(Atributo_1 == 3){printf("\n");} else {printf("3 - PIB\n");}
+    if(Atributo_1 == 4) {printf("\n");} else {printf("4 - Número de pontos turísticos\n");}
+    if(Atributo_1 == 5) {printf("\n");} else {printf("5 - Densidade demográfica\n");}
     printf("Digite a opção\n");
     scanf("%d", &Atributo_2);
 
@@ -191,8 +191,8 @@ if (Atributo_1 == Atributo_2)
     printf("Abaixo dados do Segundo atributo escolnhido: \n");
     printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: População):\n");
-   printf("Carta 1 População - %s: %d\n", nome_1, populacao_1);
-   printf("Carta 2 População - %s: %d\n", nome_2, populacao_2);
+   printf("Carta 1 População - %s: %d Pessoas\n", nome_1, populacao_1);
+   printf("Carta 2 População - %s: %d Pessoas\n", nome_2, populacao_2);
    //teste logico popupação
    if(populacao_1 > populacao_2){
     printf("Resultado: Carta 1 População (%s) venceu!\n", nome_1);
