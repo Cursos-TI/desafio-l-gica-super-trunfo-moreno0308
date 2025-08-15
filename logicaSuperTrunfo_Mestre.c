@@ -173,6 +173,10 @@ int main() {
     printf("Digite a opção\n");
     scanf("%d", &Atributo_2);
 
+if (Atributo_1 == Atributo_2)
+{
+    printf("Você escolheu o mesmo atributo, escolha atributos diferentes! \n");
+} else{
     switch (Atributo_2)
     {
     case 1:
@@ -238,6 +242,6 @@ int main() {
     default:
     printf("***********Opção Invalida!!!! ***********\n");
         break;
-    }   
+    }}   
     return 0;
 }
