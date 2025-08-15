@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // Desafio Super Trunfo - Países
 // Tema 2 - Comparação das Cartas
@@ -15,8 +16,8 @@ int main() {
     char  nome_1[25] = "Cidade 1", nome_2[25] = "Cidade 2"; //nomes das cidades
     char estado_1 = 'A', estado_2 = 'B';
     float SuperPoder_A = 15.00, SuperPoder_B = 15.00;
-    char *resultado_1 = "Cidade 1"; 
-    char *resultado_2 = "Cidade 2";
+    int resultado_1; 
+    int resultado_2;
 
     
     // Cadastro das Cartas:
@@ -104,13 +105,13 @@ int main() {
     printf("Abaixo dados do primeiro atributo escolnhido: \n");
     printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: População):\n");
-   printf("Carta 1 População - %s: %d Pessoas\n", nome_1, populacao_1);
-   printf("Carta 2 População - %s: %d Pessoas\n", nome_2, populacao_2);
+   printf("Carta 1 População - %s: %d\n", nome_1, populacao_1);
+   printf("Carta 2 População - %s: %d\n", nome_2, populacao_2);
    //teste logico popupação
    if(populacao_1 > populacao_2){
     printf("Resultado: Carta 1 População (%s) venceu!\n", nome_1);
    } else if(populacao_1 < populacao_2) {printf("Resultado: Carta 2 População (%s) venceu!\n", nome_2);} else {printf("Jogadores Empatarão no Atributo população. \n");}
-   resultado_1 = populacao_1 > populacao_2 ? nome_1 : nome_2;
+   resultado_1 = populacao_1 > populacao_2 ? 1 :0;
         break;
     case 2:
 //Abaixo comparação de cartas AREA
@@ -123,7 +124,7 @@ int main() {
    if(area_1 > area_2){
     printf("Resultado: Carta 1 Área (%s) venceu!\n", nome_1);
    } else if(area_1 < area_2) {printf("Resultado: Carta 2 Área (%s) venceu!\n", nome_2);} else {printf("Jogadores Empatarão no Atributo população. \n");}
-   resultado_1 = area_1 > area_2 ? nome_1 : nome_2;
+   resultado_1 = area_1 > area_2 ? 1 :0;
    break;
     case 3:
          //Abaixo comparação de cartas PIB
@@ -136,7 +137,7 @@ int main() {
    if(PIB_1 > PIB_2){
     printf("Resultado: Carta 1 PIB ( %s) venceu!\n", nome_1);
    } else if(PIB_1 < PIB_2) {printf("Resultado: Carta 2 PIB ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo PIB");}
-   resultado_1 = PIB_1 > PIB_2 ? nome_1 : nome_2;
+   resultado_1 = PIB_1 > PIB_2 ? 1 :0;
    break;
     case 4:
          //Abaixo comparação de cartas Número de pontos turísticos
@@ -149,7 +150,7 @@ int main() {
    if(pontos_turisticos_1 > pontos_turisticos_2){
     printf("Resultado: Carta 1 Número de pontos turísticos ( %s) venceu!\n", nome_1);
    } else if(pontos_turisticos_1 < pontos_turisticos_2) {printf("Resultado: Carta 2 Número de pontos turísticos ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo Número de pontos turísticos");}
-   resultado_1 = pontos_turisticos_1 > pontos_turisticos_2 ? nome_1 : nome_2; 
+   resultado_1 = pontos_turisticos_1 > pontos_turisticos_2 ? 1 :0;
    break;
     case 5:
          //Abaixo comparação de cartasDensidade demográfica
@@ -162,7 +163,7 @@ int main() {
    if(Densidade_Populacional_1 < Densidade_Populacional2){
     printf("Resultado: Carta 1 Densidade demográfica ( %s) venceu!\n", nome_1);
    } else if(Densidade_Populacional_1 > Densidade_Populacional2) {printf("Resultado: Carta 2 Densidade demográfica ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo Densidade demográfica");}
-   resultado_1 = Densidade_Populacional_1 < Densidade_Populacional2 ? nome_1 : nome_2;
+   resultado_1 = Densidade_Populacional_1 < Densidade_Populacional2 ? 1 :0;
    break;
     default:
     printf("***********Opção Invalida!!!! ***********\n");
@@ -191,13 +192,13 @@ if (Atributo_1 == Atributo_2)
     printf("Abaixo dados do Segundo atributo escolnhido: \n");
     printf("Nome do Pais(cidade): %s Vs %s\n", nome_1, nome_2);
    printf("Comparação de cartas (Atributo: População):\n");
-   printf("Carta 1 População - %s: %d Pessoas\n", nome_1, populacao_1);
-   printf("Carta 2 População - %s: %d Pessoas\n", nome_2, populacao_2);
+   printf("Carta 1 População - %s: %d\n", nome_1, populacao_1);
+   printf("Carta 2 População - %s: %d\n", nome_2, populacao_2);
    //teste logico popupação
    if(populacao_1 > populacao_2){
     printf("Resultado: Carta 1 População (%s) venceu!\n", nome_1);
    } else if(populacao_1 < populacao_2) {printf("Resultado: Carta 2 População (%s) venceu!\n", nome_2);} else {printf("Jogadores Empatarão no Atributo população. \n");}
-   resultado_2 = populacao_1 > populacao_2 ? nome_1 : nome_2;
+   resultado_2 = populacao_1 > populacao_2 ? 1 :0;
         break;
     case 2:
 //Abaixo comparação de cartas AREA
@@ -210,7 +211,7 @@ if (Atributo_1 == Atributo_2)
    if(area_1 > area_2){
     printf("Resultado: Carta 1 Área (%s) venceu!\n", nome_1);
    } else if(area_1 < area_2) {printf("Resultado: Carta 2 Área (%s) venceu!\n", nome_2);} else {printf("Jogadores Empatarão no Atributo população. \n");}
-   resultado_2 = area_1 > area_2 ? nome_1 : nome_2;
+   resultado_2 = area_1 > area_2 ? 1 :0;
    break;
     case 3:
          //Abaixo comparação de cartas PIB
@@ -223,7 +224,7 @@ if (Atributo_1 == Atributo_2)
    if(PIB_1 > PIB_2){
     printf("Resultado: Carta 1 PIB ( %s) venceu!\n", nome_1);
    } else if(PIB_1 < PIB_2) {printf("Resultado: Carta 2 PIB ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo PIB");}
-   resultado_2 = PIB_1 > PIB_2 ? nome_1 : nome_2;
+   resultado_2 = PIB_1 > PIB_2 ? 1 :0;
    break;
     case 4:
          //Abaixo comparação de cartas Número de pontos turísticos
@@ -236,7 +237,7 @@ if (Atributo_1 == Atributo_2)
    if(pontos_turisticos_1 > pontos_turisticos_2){
     printf("Resultado: Carta 1 Número de pontos turísticos ( %s) venceu!\n", nome_1);
    } else if(pontos_turisticos_1 < pontos_turisticos_2) {printf("Resultado: Carta 2 Número de pontos turísticos ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo Número de pontos turísticos");}
-   resultado_2 = pontos_turisticos_1 > pontos_turisticos_2 ? nome_1 : nome_2;
+   resultado_2 = pontos_turisticos_1 > pontos_turisticos_2 ? 1 :0;
    break;
     case 5:
          //Abaixo comparação de cartasDensidade demográfica
@@ -249,21 +250,18 @@ if (Atributo_1 == Atributo_2)
    if(Densidade_Populacional_1 < Densidade_Populacional2){
     printf("Resultado: Carta 1 Densidade demográfica ( %s) venceu!\n", nome_1);
    } else if(Densidade_Populacional_1 > Densidade_Populacional2) {printf("Resultado: Carta 2 Densidade demográfica ( %s) venceu!\n", nome_2);} else{printf("Empate No Atributo Densidade demográfica");}
-   resultado_2 = Densidade_Populacional_1 < Densidade_Populacional2 ? nome_1 : nome_2;
+   resultado_2 = Densidade_Populacional_1 < Densidade_Populacional2 ? 1 :0;
    break;
     default:
     printf("***********Opção Invalida!!!! ***********\n");
         break;
     }}
     printf("\n");
-    if (resultado_1 == resultado_2)
+    if (resultado_1 && resultado_2)
     {
-       printf("O Ganhador Foi o Jogador Com a carta: %s \n",resultado_1);
-    } else {printf("***** O Jogo Empatou *****");}
-
-
-
-    
-    
+       printf("O Ganhador Foi o Jogador 1 Com a carta: %s \n",nome_1);
+    } else if((resultado_1 ==0) && (resultado_2 == 0)) {printf("O Ganhador Foi o Jogador 2 Com a carta: %s \n",nome_2);} 
+    else if(((resultado_1== 1) && (resultado_2 == 0))||((resultado_1== 0) && (resultado_2 ==1)))
+    { printf("*******Jogo empatou********\n");}
     return 0;
 }
