@@ -256,12 +256,14 @@ if (Atributo_1 == Atributo_2)
         break;
     }}
     printf("\n");
-    if ((resultado_1 == nome_1) && (resultado_2 == nome_1))
+    if (resultado_1 == resultado_2)
     {
-       printf("O Ganhador Foi o Jogador 1, Com a carta: %s \n",nome_1);
-    } else if((resultado_1 == nome_2) && (resultado_2 == nome_2)) 
-    {printf("O Ganhador Foi o Jogador 2, Com a carta: %s \n",nome_2);}
-    else{printf("****Jogo empatou****");}   
+       printf("O Ganhador Foi o Jogador Com a carta: %s \n",resultado_1);
+    } else {printf("***** O Jogo Empatou *****");}
+
+
+
+    
     
     return 0;
 }
